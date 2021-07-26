@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Coffee School</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+  <header>
+    <nav id="nav" class="navbar navbar-expand-md py-3 fixed-top px-5">
+
+        <a href="#" class="navbar-brand">Coffee School</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <i class="hamburger bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-2">
+              <a href="#courses" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#instructors" class="nav-link">Trainers</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#review" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+    </nav>
+  </header>
+  
+
+  <!-- HERO SECTION -->
+  <section class="hero text-light">
+    <div class="container hero-container text-center px-4">
+      <h1 class="hero-title pb-3">Coffee School</h1>
+      <p class="hero-text">Coffee School is one of the industry's leading barista training centres, providing home coffee and "beyond coffee" education and experiences for anyone passionate about a good cup of espresso</p>
+      <p class="hero-text pb-4">Ready to become your favourite barista?</p>
+      <button class="btn-hero d-inline-flex align-items-center">
+        <span>View Courses</span>
+        <i class="bi bi-arrow-right-short"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- COURSES SECTION -->
+  <section class="courses">
+    <div class="fundamental d-md-flex">
+      <div class="course-description">
+        <h2 class="course-title">Barista Fundamentals</h2>
+        <p>No experience needed, these courses will teach you the basic but essential skills from getting to know the equipment and the origin of coffee, all the way through pulling the perfect espresso.</p>
+      </div>
+      <div class="course-img">
+        <img class="img-fluid" src="images/barista-fundamentals.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="latte-art d-md-flex">
+      <div class="course-description order-2">
+        <h2 class="course-title">Latte Art</h2>
+        <p>The ultimate guide to milk foaming and creating incredible latte art.</p>
+      </div>
+      <div class="course-img order-1">
+        <img class="img-fluid" src="images/latte-art.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="advanced d-md-flex">
+      <div class="course-description">
+        <h2 class="course-title">Advanced Barista Training</h2>
+        <p>Sill-based and SCA certified courses for home brewers and working baristas on best practices, brewing methods, sensory skills, etc.</p>
+      </div>
+      <div class="course-img">
+        <img class="img-fluid" src="images/advanced-barista.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="roast d-md-flex">
+      <div class="course-description order-2">
+        <h2 class="course-title">Roast Training</h2>
+        <p>Taught by the industry's experts, these courses offer you everything you need to know to become a roast master.</p>
+      </div>
+      <div class="course-img order-1">
+        <img class="img-fluid" src="images/roast-training.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="beyond-coffee d-md-flex">
+      <div class="course-description">
+        <h2 class="course-title">Beyond Coffee</h2>
+        <p>Various buyer's guides, water chemistry, business planning and measuring your carbon footprint.</p>
+      </div>
+      <div class="course-img">
+        <img class="img-fluid" src="images/beyond-coffee.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="online d-md-flex">
+      <div class="course-description">
+        <h2 class="course-title">Online Training</h2>
+        <p>Sign up and start learning: 9 premium online courses with over a 100 videos, providing the same standards as our traditional courses.</p>
+      </div>
+      <div class="course-img">
+        <img class="img-fluid" src="" alt="">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- INSTRUCTORS SECTION -->
+  <section class="instructors">
+    <h2>Our Trainers</h2>
+    <div>
+      <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="">
+      <h3>Emma</h3>
+      <p>Founder of the Coffee School and one of the leading voices in the specialty coffee scene.</p>
+    </div>
+    <div>
+      <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="">
+      <h3>Patrick</h3>
+      <p>Pouring flat whites since 2012, Patrick is keen to share his knowledge and help people gain the confidence to grow in the coffee industry.</p>
+    </div>
+    <div>
+      <img src="" alt="">
+      <h3>Zsofi</h3>
+      <p>When she isn’t making you your perfect cup of coffee, she’ll be at home binging on anime or geeking out to books, video games and explore all things coffee.</p>
+    </div>
+    <div>
+      <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="">
+      <h3>Oliver</h3>
+      <p>He once said he’ll never work in hospitality ever again. Let’s just say, he never stood by that statement.</p>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h2>Customer reviews</h2>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p>I came to Coffee School with no background or experience in coffee (other than drinking it and enjoying some good coffee shops). My three days in the coffee business master class exceeded my expectations. The team’s communication of their experience and knowledge was clear and made learning the concepts so easy. I left feeling inspired and educated! Thank you! - Jamie</p>
+        </div>
+        <div class="carousel-item">
+          <p>Absolutely love it! :) Had a great day and lots of fun with the lovely Zsofi who is really comitted for her job. I had learn a lot and practise a lot as well. Oh my God...coffee everywhere! :) Do not hesitate, book it! Good atmosphere and people! They can help you to start you way. Many thanks for Zsofi and the whole Coffee School Team! :) - Taylor</p>
+        </div>
+        <div class="carousel-item">
+          <p>Amazing course and very informative. Loads of information to take in especially for those keen to learn a about coffee. This will save you time reading books and searching the web for a fraction of what they would happily share with you. The hard work is already done by those organizing the course. All you need to do is sit comfortably behind your screen, relax and sip all the knowledge they offer like you you sip your coffee. - Amber</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION -->
+  <section class="newsletter">
+    <h2>Sign Up For Our Newsletter</h2>
+    <p>Stay in the loop and subscribe for our weekly newsletter & course updates and events</p>
+    <form action="">
+      <input type="text" placeholder="Enter your email address...">
+      <button>Subscribe!</button>
+    </form>
+  </section>
+
+  <!-- CONCACT SECTION -->
+  
+  <section class="contact">
+    <div class="container">
+    <div class="row">
+      <div class="col-md">
+          <div class="contact-info">
+            <h2 class="text-center">Contact Info</h2>
+            <ul class="mb-0">
+              <li><span class="fw-bold">Main Location:</span> 20 Main St London</li>
+              <li><span class="fw-bold">Phone:</span> +44 0733 383367</li>
+              <li><span class="fw-bold">Email:</span> coffeeschool@email.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- FOOTER SECTION -->
+  <footer class="pt-5 pb-3 text-center">
+    <div class="social-media d-flex justify-content-center pb-4">
+      <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+      <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/zsofi-maruzs-a5a703216/"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+      <p class="mb-0">Copyright &copy; 2021 Coffee School</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZmx1ZmZ5a2FzIiwiYSI6ImNrcmVzMjViczBxcHgycG9lNjg2MnExcHoifQ.Z3-PRo9oJ_wCF5PRtP9aRw';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-71.060982, 42.35725],
+    zoom: 18,
+    });
+    </script>
+  
+</body>
+</html>

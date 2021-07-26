@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;700&family=Roboto&display=swap');
+
+:root {
+
+  /* COLORS */
+  --clr-primary-grayblue: hsl(210, 32%, 28%);
+  --clr-primary-sandbrown: hsl(35, 57%, 73%);
+
+  /* FONTS */
+  --ff-main: 'Roboto', sans-serif;
+  --ff-heading: 'Fira Sans', sans-serif;
+}
+
+body {
+  font-family: var(--ff-main);
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 60px;
+}
+
+/* NAVBAR */
+
+nav {
+  background: var(--clr-primary-grayblue);
+  font-family: var(--ff-heading);
+}
+
+.navbar-brand,
+.nav-link {
+  color: white;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: var(--clr-primary-sandbrown);
+}
+
+.hamburger {
+  color: white;
+  font-size: 2rem;
+}
+
+/* HERO SECTION */
+
+.hero {
+  background: url("images/hero-bg-1.jpg"), rgb(151, 146, 139);
+  background-blend-mode: multiply;
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+}
+
+.hero-container {
+  max-width: 900px;
+}
+
+.hero-title {
+  font-family: var(--ff-heading);
+  font-size: 3rem;
+}
+
+.hero-text {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.btn-hero {
+  all: unset;
+  border: 2px solid var(--clr-primary-grayblue);
+  padding: .75em 2.5em;
+  border-radius: 35px;
+  background: transparent;
+  transition: all .2s ease-in;
+}
+
+.btn-hero:hover {
+  background: var(--clr-primary-grayblue);
+  border: 2px solid white;
+}
+
+.btn-hero span {
+  padding-right: .3em;
+}
+
+.bi-arrow-right-short {
+  font-size: 1.5rem;
+}
+
+/* COURSES SECTION */
+
+.course-title {
+  font-family: var(--ff-heading);
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  background: var(--clr-primary-sandbrown);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background: hsla(201, 15%, 41%, 0.164);
+}
+
+.social-media {
+  gap: 1em;
+  font-size: 1.2rem;
+}
+
+.social-media a {
+  color: var(--clr-primary-grayblue);
+  transition: color .2s ease-in-out;
+}
+
+.social-media a:hover {
+  color: hsla(35, 37%, 43%, .7);
+}
+
+.copyright {
+  opacity: .4;
+}
+
+@media (min-width: 768px) {
+
+  .course-description {
+    width: 50%;
+  }
+  
+  .course-img {
+    max-width: 50%;
+  }
+}
