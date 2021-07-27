@@ -31,10 +31,10 @@
               <a href="#courses" class="nav-link">Courses</a>
             </li>
             <li class="nav-item px-2">
-              <a href="#instructors" class="nav-link">Trainers</a>
+              <a href="#trainers" class="nav-link">Trainers</a>
             </li>
             <li class="nav-item px-2">
-              <a href="#review" class="nav-link">Reviews</a>
+              <a href="#reviews" class="nav-link">Reviews</a>
             </li>
             <li class="nav-item px-2">
               <a href="#contact" class="nav-link">Contact</a>
@@ -52,7 +52,7 @@
       <h1 class="hero-title pb-3">Coffee School</h1>
       <p class="hero-text">Coffee School is one of the industry's leading barista training centres, providing home coffee and "beyond coffee" education and experiences for anyone passionate about a good cup of espresso</p>
       <p class="hero-text pb-4">Ready to become your favourite barista?</p>
-      <button class="btn-hero d-inline-flex align-items-center">
+      <button class="btn btn-hero d-inline-flex align-items-center">
         <span>View Courses</span>
         <i class="bi bi-arrow-right-short"></i>
       </button>
@@ -60,11 +60,12 @@
   </section>
 
   <!-- COURSES SECTION -->
-  <section class="courses">
+  <section id="courses" class="courses">
     <div class="fundamental d-md-flex">
-      <div class="course-description">
+      <div class="course-description d-flex flex-column justify-content-center px-3">
         <h2 class="course-title">Barista Fundamentals</h2>
         <p>No experience needed, these courses will teach you the basic but essential skills from getting to know the equipment and the origin of coffee, all the way through pulling the perfect espresso.</p>
+        <button class="btn-course ">Browse Barista Fundamental Courses</button>
       </div>
       <div class="course-img">
         <img class="img-fluid" src="images/barista-fundamentals.jpg" alt="">
@@ -72,9 +73,10 @@
     </div>
 
     <div class="latte-art d-md-flex">
-      <div class="course-description order-2">
+      <div class="course-description order-2 d-flex flex-column justify-content-center px-3">
         <h2 class="course-title">Latte Art</h2>
         <p>The ultimate guide to milk foaming and creating incredible latte art.</p>
+        <button class="btn-course">Browse Barista Fundamental Courses</button>
       </div>
       <div class="course-img order-1">
         <img class="img-fluid" src="images/latte-art.jpg" alt="">
@@ -82,9 +84,10 @@
     </div>
 
     <div class="advanced d-md-flex">
-      <div class="course-description">
+      <div class="course-description d-flex flex-column justify-content-center px-3">
         <h2 class="course-title">Advanced Barista Training</h2>
-        <p>Sill-based and SCA certified courses for home brewers and working baristas on best practices, brewing methods, sensory skills, etc.</p>
+        <p>Skill-based and SCA certified courses for home brewers and working baristas on best practices, brewing methods, sensory skills, etc.</p>
+        <button class="btn-course">Browse Advanced Barista Courses</button>
       </div>
       <div class="course-img">
         <img class="img-fluid" src="images/advanced-barista.jpg" alt="">
@@ -92,19 +95,21 @@
     </div>
 
     <div class="roast d-md-flex">
-      <div class="course-description order-2">
+      <div class="course-description order-2 d-flex flex-column justify-content-center px-3">
         <h2 class="course-title">Roast Training</h2>
         <p>Taught by the industry's experts, these courses offer you everything you need to know to become a roast master.</p>
+        <button class="btn-course">Browse Roast Training Courses</button>
       </div>
-      <div class="course-img order-1">
+      <div class="course-img order-1 d-flex flex-column justify-content-center">
         <img class="img-fluid" src="images/roast-training.jpg" alt="">
       </div>
     </div>
 
     <div class="beyond-coffee d-md-flex">
-      <div class="course-description">
+      <div class="course-description d-flex flex-column justify-content-center px-3">
         <h2 class="course-title">Beyond Coffee</h2>
         <p>Various buyer's guides, water chemistry, business planning and measuring your carbon footprint.</p>
+        <button class="btn-course">Browse Beyond Coffee Courses</button>
       </div>
       <div class="course-img">
         <img class="img-fluid" src="images/beyond-coffee.jpg" alt="">
@@ -112,44 +117,76 @@
     </div>
 
     <div class="online d-md-flex">
-      <div class="course-description">
+      <div class="course-description order-2 d-flex flex-column justify-content-center px-3">
         <h2 class="course-title">Online Training</h2>
         <p>Sign up and start learning: 9 premium online courses with over a 100 videos, providing the same standards as our traditional courses.</p>
+        <button class="btn-course">Browse Online Training Courses</button>
       </div>
-      <div class="course-img">
-        <img class="img-fluid" src="" alt="">
+      <div class="course-img order-1">
+        <img class="img-fluid" src="images/online-training.jpg" alt="">
       </div>
     </div>
 
   </section>
 
-  <!-- INSTRUCTORS SECTION -->
-  <section class="instructors">
-    <h2>Our Trainers</h2>
-    <div>
-      <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="">
-      <h3>Emma</h3>
-      <p>Founder of the Coffee School and one of the leading voices in the specialty coffee scene.</p>
-    </div>
-    <div>
-      <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="">
-      <h3>Patrick</h3>
-      <p>Pouring flat whites since 2012, Patrick is keen to share his knowledge and help people gain the confidence to grow in the coffee industry.</p>
-    </div>
-    <div>
-      <img src="" alt="">
-      <h3>Zsofi</h3>
-      <p>When she isn’t making you your perfect cup of coffee, she’ll be at home binging on anime or geeking out to books, video games and explore all things coffee.</p>
-    </div>
-    <div>
-      <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="">
-      <h3>Oliver</h3>
-      <p>He once said he’ll never work in hospitality ever again. Let’s just say, he never stood by that statement.</p>
+  <!-- TRAINERS SECTION -->
+  <section id="trainers" class="trainers">
+    <div class="container">
+      <h2 class="text-center">Our Trainers</h2>
+      <div class="row g-3">
+
+        <!-- EMMA -->
+        <div class="col-md-6 col-lg-3 text-center">
+          <div class="card">
+            <img class="trainer-img rounded-circle" src="https://randomuser.me/api/portraits/women/25.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Emma</h3>
+              <p class="card-text">Founder of the Coffee School and one of the leading voices in the specialty coffee scene.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PATRICK -->
+        <div class="col-md-6 col-lg-3 text-center">
+          <div class="card">
+            <img class="trainer-img rounded-circle" src="https://randomuser.me/api/portraits/men/41.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Patrick</h3>
+              <p class="card-text">Pouring flat whites since 2012, Patrick is keen to share his knowledge and help people gain the confidence to grow in the coffee industry.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZSOFI -->
+        <div class="col-md-6 col-lg-3 text-center">
+          <div class="card">
+            <img class="trainer-img rounded-circle" src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Zsofi</h3>
+              <p class="card-text">When she isn’t making you your perfect cup of coffee, she’ll be at home binging on anime or geeking out to books, video games and explore all things coffee.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- OLIVER -->
+        <div class="col-md-6 col-lg-3 text-center">
+          <div class="card">
+            <img class="trainer-img rounded-circle" src="https://randomuser.me/api/portraits/men/36.jpg" alt="">
+            <div class="card-body">
+              <h3 class="card-title">Oliver</h3>
+              <p class="card-text">He once said he’ll never work in hospitality ever again. Let’s just say, he never stood by that statement.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <section class="reviews">
-    <h2>Customer reviews</h2>
+  <!-- REVIEWS SECTION -->
+  <section id="reviews" class="reviews">
+    <h2 class="text-center">Customer reviews</h2>
+    <div class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -176,27 +213,32 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </div>
   </section>
 
   <!-- NEWSLETTER SECTION -->
   <section class="newsletter">
-    <h2>Sign Up For Our Newsletter</h2>
-    <p>Stay in the loop and subscribe for our weekly newsletter & course updates and events</p>
-    <form action="">
-      <input type="text" placeholder="Enter your email address...">
-      <button>Subscribe!</button>
-    </form>
+    <div class="newsletter-container container d-md-flex justify-content-between align-items-center">
+      <div class="newsletter-left">
+        <h2>Sign Up For Our Newsletter</h2>
+        <p>Stay in the loop and subscribe for our weekly newsletter & course updates and events</p>
+      </div>
+      <form class="newsletter-right" action="">
+        <input type="text" placeholder="Enter your email address...">
+        <button>Subscribe!</button>
+      </form>
+    </div>
   </section>
 
   <!-- CONCACT SECTION -->
   
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="container">
     <div class="row">
       <div class="col-md">
           <div class="contact-info">
-            <h2 class="text-center">Contact Info</h2>
-            <ul class="mb-0">
+            <h2>Contact Info</h2>
+            <ul class="contact-list mb-0">
               <li><span class="fw-bold">Main Location:</span> 20 Main St London</li>
               <li><span class="fw-bold">Phone:</span> +44 0733 383367</li>
               <li><span class="fw-bold">Email:</span> coffeeschool@email.com</li>
@@ -230,7 +272,7 @@
     var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
-    center: [-71.060982, 42.35725],
+    center: [-4, 55],
     zoom: 18,
     });
     </script>
