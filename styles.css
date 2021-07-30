@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;700&family=Roboto&display=swap');
 
+
+/* CONTENTS */
+
+/* CUSTOM PROPERITES */
+/* GENERAL STYLES */
+/* NAVBAR */
+/* HERO SECTION  */
+/* KEYFRAMES */
+/* COURSES SECTION  */
+/* TRAINERS SECTION  */
+/* REVIEWS SECTION  */
+/* NEWSLETTER SECTION  */
+/* CONTACT SECTION  */
+/* FOOTER SECTION  */
+/* MEDIA QUERIES  */
+
+
+
+
+/* CUSTOM PROPERTIES */
+
 :root {
 
   /* COLORS */
@@ -7,6 +28,8 @@
   --clr-primary-grayblue-800: hsl(210, 32%, 28%);
   --clr-primary-sandbrown-100: hsl(34, 100%, 87%);
   --clr-primary-sandbrown: hsl(35, 57%, 73%);
+  --clr-bg-blend: hsl(35, 5%, 57%);
+  --clr-bg-lightgray: hsla(201, 15%, 41%, 0.164);
 
   /* FONTS */
   --ff-heading: 'Roboto', sans-serif;
@@ -27,6 +50,7 @@ body::before {
   height: 60px;
 }
 
+
 /* NAVBAR */
 
 nav {
@@ -37,6 +61,7 @@ nav {
 .navbar-brand,
 .nav-link {
   color: white;
+  /* navbar loading animation: */
   animation: navbar-load .75s ease-in;
   animation-fill-mode: forwards;
   transform: translateY(-20px);
@@ -57,10 +82,11 @@ nav {
   scroll-margin-top: 4.5rem;
 }
 
+
 /* HERO SECTION */
 
 .hero {
-  background: url("images/hero-bg-1.jpg"), rgb(151, 146, 139);
+  background: url("images/hero-bg-1.jpg"), var(--clr-bg-blend);
   background-blend-mode: multiply;
   min-height: 100vh;
   display: grid;
@@ -74,6 +100,7 @@ nav {
 .hero-title {
   font-family: var(--ff-heading);
   font-size: 3rem;
+  /* hero section loading animation: */
   animation: hero-load .75s ease-in 1s;
   animation-fill-mode: forwards;
   transform: translateX(-20px);
@@ -83,6 +110,7 @@ nav {
 .hero-text {
   font-size: 1rem;
   line-height: 1.7;
+  /* hero section loading animation: */
   animation: hero-load .75s ease-in 1s;
   animation-fill-mode: forwards;
   transform: translateX(-20px);
@@ -91,12 +119,13 @@ nav {
 
 .btn-hero {
   all: unset;
+  background: transparent;
   border: 2px solid var(--clr-primary-grayblue-800);
+  border-radius: 35px;
   cursor: pointer;
   padding: .75em 2.5em;
-  border-radius: 35px;
-  background: transparent;
   transition: all .2s ease-in;
+  /* hero section loading animation: */
   animation: hero-load .75s ease-in 1s;
   animation-fill-mode: forwards;
   transform: translateX(-20px);
@@ -116,6 +145,7 @@ nav {
 .bi-arrow-right-short {
   font-size: 1.5rem;
 }
+
 
 /* KEYFRAMES */
 
@@ -146,48 +176,48 @@ nav {
 }
 
 
-
 /* COURSES SECTION */
 
 .course-description {
-  background: hsla(201, 15%, 41%, 0.164);
+  background: var(--clr-bg-lightgray);
   padding-top: 2.5em;
+  padding-right: 1.5em;
   padding-bottom: 3em;
   padding-left: 1.5em;
-  padding-right: 1.5em;
   text-align: center;
 }
 
 .course-title {
   font-family: var(--ff-heading);
   font-size: 1.75rem;
-  padding-bottom: .3em;
   margin: 0 auto;
+  padding-bottom: .3em;
 }
 
 .course-text {
   line-height: 1.8;
-  padding-bottom: 1.5em;
   margin: 0 auto;
   max-width: 500px;
+  padding-bottom: 1.5em;
 }
 
 .btn-course {
   all: unset;
-  border: 2px solid white;
-  color: white;
-  padding: .75em 1.5em;
-  border-radius: 35px;
   background: var(--clr-primary-grayblue-800);
-  max-width: 18rem;
+  border: 2px solid white;
+  border-radius: 35px;
+  color: white;
   cursor: pointer;
-  transition: all .2s ease-in;
   margin: 0 auto;
+  max-width: 18rem;
+  padding: .75em 1.5em;
+  transition: all .2s ease-in;
 }
 
 .btn-course:hover {
   background: var(--clr-primary-grayblue-700);
 }
+
 
 /* TRAINERS SECTION */
 
@@ -201,23 +231,24 @@ nav {
 }
 
 .trainer-img {
-  width: 50%;
   margin: 0 auto;
   padding-bottom: 1em;
+  width: 50%;
 }
 
 .card {
   background: var(--clr-primary-grayblue-800);
+  box-shadow: 0 7px 18px hsla(239, 29%, 49%, 0.45);
   color: white;
   min-height: 450px;
   padding-top: 2em;
-  box-shadow: 0 7px 18px rgba(88, 89, 160, 0.45);
 }
 
 .card-title {
   font-family: var(--ff-heading);
   padding-bottom: .5em;
 }
+
 
 /* REVIEWS SECTION */
 
@@ -231,14 +262,15 @@ nav {
 }
 
 .carousel-inner {
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
 }
 
 .carousel-item {
-  padding-top: 2.5em;
   min-height: 370px;
+  padding-top: 2.5em;
 }
+
 
 /* NEWSLETTER SECTION */
 
@@ -250,7 +282,7 @@ nav {
 }
 
 .newsletter-container {
-  background: url("images/newsletter.jpg"), rgba(66, 66, 66, 0.219);
+  background: url("images/newsletter.jpg"), hsla(0, 0%, 26%, 0.219);
   background-blend-mode: multiply;
   padding: 5em;
 }
@@ -265,26 +297,27 @@ nav {
 }
 
 .newsletter-right input {
-  padding: .6em;
   border: 2px solid transparent;
   border-radius: 35px;
+  padding: .6em;
 }
 
 .newsletter-button {
   all: unset;
-  border-radius: 35px;
   background: var(--clr-primary-grayblue-800);
   border: 2px solid white;
+  border-radius: 35px;
   cursor: pointer;
   display: block;
-  transition: all .2s ease-in;
   margin: 1em auto;
   padding: .6em 4.3em;
+  transition: all .2s ease-in;
 }
 
 .newsletter-button:hover {
   background: var(--clr-primary-grayblue-700);
 }
+
 
 /* CONTACT SECTION */
 
@@ -307,26 +340,27 @@ nav {
 }
 
 .contact-list li {
-  padding-bottom: .7em;
   font-size: 1.05rem;
+  padding-bottom: .7em;
 }
 
 #map {
-  max-width: 500px;
-  height: 300px;
   border-radius: 10px;
+  height: 300px;
+  max-width: 500px;
 }
+
 
 /* FOOTER SECTION */
 
 footer {
-  background: hsla(201, 15%, 41%, 0.164);
+  background: var(--clr-bg-lightgray);
   position: relative;
 }
 
 .social-media {
-  gap: 1em;
   font-size: 1.2rem;
+  gap: 1em;
 }
 
 .social-media a {
@@ -349,9 +383,9 @@ footer {
 @media (min-width: 768px) {
 
   .course-description {
-    width: 50%;
-    text-align: left;
     padding-left: 2.5em;
+    text-align: left;
+    width: 50%;
   }
 
   .course-title {
@@ -359,9 +393,9 @@ footer {
   }
 
   .course-text {
-    padding-bottom: 2.5em;
     margin: 0;
     max-width: 700px;
+    padding-bottom: 2.5em;
   }
   
   .course-img {
@@ -392,8 +426,8 @@ footer {
 
   .newsletter-button {
     border-radius: 10px 35px 35px 10px;
-    padding: .6em 2em .6em 1em;
     display: inline-block;
+    padding: .6em 2em .6em 1em;
   }
 
   .contact {
@@ -401,11 +435,11 @@ footer {
   }
 
   .up-arrow {
+    color: var(--clr-primary-grayblue-800);
     display: block;
     position: absolute;
-    right: 2em;
     top: 40%;
-    color: var(--clr-primary-grayblue-800);
+    right: 2em;
     transition: color .2s ease-in-out;
   }
   
