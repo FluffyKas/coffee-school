@@ -104,24 +104,26 @@ nav {
 /* COURSES SECTION */
 
 .course-description {
-  /* background: var(--clr-primary-sandbrown-100); */
   background: hsla(201, 15%, 41%, 0.164);
-  padding-left: 2.5em;
-  padding-right: 1em;
-}
-
-.course-description p {
-  max-width: 768px;
+  padding-top: 2.5em;
+  padding-bottom: 3em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-align: center;
 }
 
 .course-title {
   font-family: var(--ff-heading);
+  font-size: 1.75rem;
   padding-bottom: .3em;
+  margin: 0 auto;
 }
 
 .course-text {
   line-height: 1.8;
-  padding-bottom: 1.6em;
+  padding-bottom: 1.5em;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 .btn-course {
@@ -129,11 +131,12 @@ nav {
   border: 2px solid white;
   color: white;
   padding: .75em 1.5em;
-  border-radius: 10px 35px 35px 10px;
+  border-radius: 35px;
   background: var(--clr-primary-grayblue-800);
   max-width: 18rem;
   cursor: pointer;
   transition: all .2s ease-in;
+  margin: 0 auto;
 }
 
 .btn-course:hover {
@@ -162,6 +165,7 @@ nav {
   color: white;
   min-height: 450px;
   padding-top: 2em;
+  box-shadow: 0 7px 18px rgba(88, 89, 160, 0.3);
 }
 
 .card-title {
@@ -210,6 +214,7 @@ nav {
 
 .newsletter-right button {
   padding: .6em;
+  border-radius: 10px 35px 35px 10px;
 }
 
 /* CONTACT SECTION */
@@ -275,10 +280,27 @@ footer {
 
   .course-description {
     width: 50%;
+    text-align: left;
+    padding-left: 2.5em;
+  }
+
+  .course-title {
+    margin: 0;
+  }
+
+  .course-text {
+    padding-bottom: 2.5em;
+    margin: 0;
+    max-width: 700px;
   }
   
   .course-img {
     max-width: 50%;
+  }
+
+  .btn-course {
+    border-radius: 10px 35px 35px 10px;
+    margin: 0;
   }
 
   .newsletter {
