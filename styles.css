@@ -165,7 +165,7 @@ nav {
   color: white;
   min-height: 450px;
   padding-top: 2em;
-  box-shadow: 0 7px 18px rgba(88, 89, 160, 0.3);
+  box-shadow: 0 7px 18px rgba(88, 89, 160, 0.45);
 }
 
 .card-title {
@@ -180,14 +180,18 @@ nav {
   padding-top: 5em;
 }
 
+.carousel-title {
+  font-size: 2rem;
+}
+
 .carousel-inner {
-  max-width: 50%;
+  text-align: center;
   margin: 0 auto;
 }
 
 .carousel-item {
   padding-top: 2.5em;
-  padding-bottom: 4em;
+  min-height: 370px;
 }
 
 /* NEWSLETTER SECTION */
@@ -200,21 +204,40 @@ nav {
 }
 
 .newsletter-container {
-  background: url("images/newsletter.jpg");
+  background: url("images/newsletter.jpg"), rgba(66, 66, 66, 0.219);
+  background-blend-mode: multiply;
   padding: 5em;
 }
 
 .newsletter-left {
-  max-width: 45%;
+  padding-bottom: 1em;
+}
+
+.newsletter-title {
+  font-size: 1.75rem;
+  padding-bottom: .3em;
 }
 
 .newsletter-right input {
   padding: .6em;
+  border: 2px solid transparent;
+  border-radius: 35px;
 }
 
-.newsletter-right button {
-  padding: .6em;
-  border-radius: 10px 35px 35px 10px;
+.newsletter-button {
+  all: unset;
+  border-radius: 35px;
+  background: var(--clr-primary-grayblue-800);
+  border: 2px solid white;
+  cursor: pointer;
+  display: block;
+  transition: all .2s ease-in;
+  margin: 1em auto;
+  padding: .6em 4.3em;
+}
+
+.newsletter-button:hover {
+  background: var(--clr-primary-grayblue-700);
 }
 
 /* CONTACT SECTION */
@@ -224,6 +247,7 @@ nav {
   color: white;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  text-align: center;
 }
 
 .contact-title {
@@ -303,7 +327,30 @@ footer {
     margin: 0;
   }
 
+  .carousel-inner {
+    max-width: 50%;
+    text-align: left;
+  }
+
   .newsletter {
+    text-align: left;
+  }
+
+  .newsletter-left {
+    max-width: 45%;
+  }
+
+  .newsletter-right input {
+    border-radius: 0;
+  }
+
+  .newsletter-button {
+    border-radius: 10px 35px 35px 10px;
+    padding: .6em 2em .6em 1em;
+    display: inline-block;
+  }
+
+  .contact {
     text-align: left;
   }
 
