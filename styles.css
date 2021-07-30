@@ -37,6 +37,10 @@ nav {
 .navbar-brand,
 .nav-link {
   color: white;
+  animation: navbar-load .75s ease-in;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
 }
 
 .navbar-brand:hover,
@@ -70,11 +74,19 @@ nav {
 .hero-title {
   font-family: var(--ff-heading);
   font-size: 3rem;
+  animation: hero-load .75s ease-in 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-20px);
+  opacity: 0;
 }
 
 .hero-text {
   font-size: 1rem;
   line-height: 1.7;
+  animation: hero-load .75s ease-in 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-20px);
+  opacity: 0;
 }
 
 .btn-hero {
@@ -85,6 +97,10 @@ nav {
   border-radius: 35px;
   background: transparent;
   transition: all .2s ease-in;
+  animation: hero-load .75s ease-in 1s;
+  animation-fill-mode: forwards;
+  transform: translateX(-20px);
+  opacity: 0;
 }
 
 .btn-hero:hover {
@@ -100,6 +116,36 @@ nav {
 .bi-arrow-right-short {
   font-size: 1.5rem;
 }
+
+/* KEYFRAMES */
+
+@keyframes navbar-load {
+
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-load {
+
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+
 
 /* COURSES SECTION */
 
