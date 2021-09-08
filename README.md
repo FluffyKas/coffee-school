@@ -24,7 +24,7 @@ I learned a bunch of things along the way and thorougly enjoyed the process.
 
 ### Links
 
-Live Site URL: (https://your-live-site-url.com)
+[Live Site URL](https://fluffykas.github.io/coffee-school/)
 
 ## My process
 
@@ -53,7 +53,7 @@ It was the first time also to use an API (mapbox).
 
 ## Author
 
-- Linkedin - (https://www.linkedin.com/in/zsofi-maruzs-a5a703216/)
+- [Linkedin](https://www.linkedin.com/in/zsofi-maruzs-a5a703216/)
 - Frontend Mentor - [@FluffyKas](https://www.frontendmentor.io/profile/FluffyKas)
 - Github - [@FluffyKas](https://github.com/FluffyKas)
-- Codepen - (https://codepen.io/pipepanna)
+- [Codepen](https://codepen.io/pipepanna)
