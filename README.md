@@ -46,10 +46,9 @@ I added a map for the location with the help of mapbox.
 
 ### What I learned
 
-I learned to appreciate when I'm given a design and I only need to worry about my code! :)) 
+I learned to appreciate when I'm given a design and I only need to worry about my code! :)
 I've got to practice every step of the process of building a website which I found extremely challenging but also very enjoyable.
 This was also my first attempt at using FigJam for gathering my ideas and using Bootstrap and I'd like to believe I've gained a level of confidence in using both tools. :)
-It was the first time also to use an API (mapbox).
 
 ## Author
 
