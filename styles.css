@@ -253,8 +253,11 @@ nav {
 /* REVIEWS SECTION */
 
 .reviews {
-  background: hsla(201, 15%, 41%, 0.103);
-  padding-top: 5em;
+  background: hsla(201, 15%, 41%, 0.05);
+  padding-top: 4em;
+  border-radius: 30px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .carousel-title {
@@ -267,17 +270,24 @@ nav {
 }
 
 .carousel-item {
-  min-height: 370px;
+  min-height: 450px;
   padding-top: 2.5em;
+  padding-bottom: 5em;
+  text-align: center;
 }
 
+.carousel-img {
+  width: 130px;
+  margin-bottom: 1rem;
+  border: 5px solid  var(--clr-primary-grayblue-800);
+}
 
 /* NEWSLETTER SECTION */
 
 .newsletter {
   color: white;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 5em;
+  padding-bottom: 5em;
   text-align: center;
 }
 
@@ -318,6 +328,23 @@ nav {
   background: var(--clr-primary-grayblue-700);
 }
 
+.newsletter-right {
+  position: relative;
+}
+
+.error-message {
+  color: red;
+  font-size: .75rem;
+  font-style: italic;
+  position: absolute;
+  top: 4.3rem;
+  left: .2rem;
+  visibility: hidden;
+}
+
+.error-message.error{
+  visibility: visible;
+}
 
 /* CONTACT SECTION */
 
@@ -359,7 +386,7 @@ footer {
 }
 
 .social-media {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   gap: 1em;
 }
 

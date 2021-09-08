@@ -155,7 +155,7 @@
         <!-- ZSOFI -->
         <div class="col-md-6 col-lg-3 text-center">
           <div class="card">
-            <img class="trainer-img rounded-circle" src="images/fluffy-kas-profile-pic.jpg" alt="Profile picture of Zsófi">
+            <img class="trainer-img rounded-circle" src="images/zsofi.jpeg" alt="Profile picture of Zsófi">
             <div class="card-body">
               <h3 class="card-title">Zsófi</h3>
               <p class="card-text">When she isn’t making you your perfect cup of coffee, she’ll be at home binging on anime or geeking out to books, video games and explore all things coffee.</p>
@@ -182,20 +182,23 @@
   <section id="reviews" class="scroll-snap reviews">
     <h2 class="carousel-title text-center">Customer reviews</h2>
     <div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carousel-indicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Review 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Review 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Review 3"></button>
+        <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Jamie's review"></button>
+        <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1" aria-label="Taylor's review"></button>
+        <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2" aria-label="Amber's review"></button>
       </div>
       <div class="carousel-inner px-2">
         <div class="carousel-item active">
+          <img src="https://randomuser.me/api/portraits/men/74.jpg" class="carousel-img rounded-circle" alt="Jamie.">
           <p>I came to Coffee School with no background or experience in coffee (other than drinking it and enjoying some good coffee shops). My three days in the coffee business master class exceeded my expectations. The team’s communication of their experience and knowledge was clear and made learning the concepts so easy. I left feeling inspired and educated! Thank you! - Jamie</p>
         </div>
         <div class="carousel-item px-2">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" class="carousel-img rounded-circle" alt="Taylor.">
           <p>Absolutely love it! :) Had a great day and lots of fun with the lovely Zsófi who is really comitted for her job. I had learn a lot and practise a lot as well. Oh my God...coffee everywhere! :) Do not hesitate, book it! Good atmosphere and people! They can help you to start you way. Many thanks for Zsófi and the whole Coffee School Team! :) - Taylor</p>
         </div>
         <div class="carousel-item px-2">
+          <img src="https://randomuser.me/api/portraits/women/41.jpg" class="carousel-img rounded-circle" alt="Amber.">
           <p>Amazing course and very informative. Loads of information to take in especially for those keen to learn a about coffee. This will save you time reading books and searching the web for a fraction of what they would happily share with you. The hard work is already done by those organizing the course. All you need to do is sit comfortably behind your screen, relax and sip all the knowledge they offer like you you sip your coffee. - Amber</p>
         </div>
       </div>
@@ -211,8 +214,9 @@
         <p class="newsletter-text">Stay in the loop and subscribe for our weekly newsletter & course updates and events</p>
       </div>
       <form class="newsletter-right" action="">
-        <input type="text" placeholder="Enter your email address...">
-        <button class="newsletter-button">Subscribe!</button>
+        <input type="text" class="email" placeholder="Enter your email address...">
+        <span class="error-message">error</span>
+        <button type="submit" class="newsletter-button">Subscribe!</button>
       </form>
     </div>
   </section>
@@ -242,15 +246,15 @@
     <!-- FOOTER SECTION -->
   <footer class="pt-5 pb-3 text-center">
     <div class="social-media d-flex justify-content-center pb-4">
-      <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-      <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
-      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/zsofi-maruzs-a5a703216/"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://twitter.com/" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/zsofi-maruzs-a5a703216/" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
     </div>
     <div class="copyright">
       <p class="mb-0">Copyright &copy; 2021 Coffee School</p>
     </div>
-    <a href="#" class="up-arrow"><i class="bi bi-arrow-up-circle h1"></i></a>
+    <a href="#" class="up-arrow" aria-label="Scroll to the top"><i class="bi bi-arrow-up-circle h1"></i></a>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -264,6 +268,8 @@
     zoom: 16.5,
     });
     </script>
+
+  <script src="email.js"></script>
   
 </body>
 </html>
