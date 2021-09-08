@@ -1,4 +1,4 @@
-Coffee School Website (single page)
+# Coffee School Website 
 
 This website is the first project for my portfolio. My aim here was to work from absolutely nothing and create a simple but responsive and functioning website. 
 It was my first ever attempt at creating something from nothing and frankly, it has proved to be quite a challenge. :)
@@ -18,14 +18,13 @@ I learned a bunch of things along the way and thorougly enjoyed the process.
 
 ### Screenshot
 
-![](./screenshots/coffee-school-mobile-view.jpg)
-![](./screenshots/coffee-school-desktop-view.jpg)
+![](./screenshots/coffee-school-mobile.png)
+![](./screenshots/coffee-school-desktop.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+Live Site URL: (https://your-live-site-url.com)
 
 ## My process
 
