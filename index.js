@@ -27,3 +27,22 @@ function checkInput() {
 function isItEmail (email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 };
+
+// REVEAL ON SCROLL ANIMATION
+
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for(let i = 0; i < reveals.length; i++) {
+
+    let windowHeight = window.innerHeight;
+    let revealTop = reveals[i].getBoundingClientRect().top;
+    let revealPoint = 80;
+
+    if(revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
